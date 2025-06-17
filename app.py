@@ -4,6 +4,7 @@ from genres.page import show_genres
 from actors.page import show_actors
 from movies.page import show_movies
 from reviews.page import show_reviews
+from home.page import show_home
 
 def main():
     
@@ -17,7 +18,7 @@ def main():
             ['Início', 'Gêneros', 'Atores/Atrizes', 'Filmes', 'Avaliações']
         )
         if menu_option == 'Início':
-            st.write('Início')
+           show_home()
             
         if menu_option == 'Gêneros':
             show_genres()
